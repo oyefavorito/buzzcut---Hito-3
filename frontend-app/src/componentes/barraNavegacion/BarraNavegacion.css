@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet');
+
+
+#barraNavegacion {
+  height: 120px;
+  padding: 20px 0;
+  font-family: 'Montserrat', sans-serif;
+
+}
+
+/* Contenedor del logo */
+#barraNavegacion .navbar-brand {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  cursor: pointer;
+}
+
+/* Estilos del logo */
+#barraNavegacion .navbar-brand h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  animation: pulse-effect 1.5s infinite ease-in-out;
+}
+
+#barraNavegacion .nav-link {
+  font-size: 1.1rem; /* Aumenta el tamaño del texto */
+}
+
+/* Animación de pulsación */
+@keyframes pulse-effect {
+  0% {
+    transform: scale(1);
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+  }
+  50% {
+    transform: scale(1.1);
+    text-shadow: 0 0 15px rgba(255, 255, 255, 0.8);
+  }
+  100% {
+    transform: scale(1);
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+  }
+}
+
+/* Asegurar que el Navbar colapse correctamente */
+#barraNavegacion .navbar-collapse {
+  margin-top: 0; /* Evita que quede separado */
+  padding: 0; /* Elimina espacios extra */
+  border-radius: 0; /* Elimina bordes redondeados */
+  background-color: #212429; /* Mantiene el color oscuro */
+}
+
+/* Alinear el menú correctamente en móviles */
+@media (max-width: 991px) {
+  #barraNavegacion .navbar-collapse {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    padding: 20px 20px;
+  }
+}

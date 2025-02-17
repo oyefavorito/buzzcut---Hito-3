@@ -1,0 +1,45 @@
+/* Estilos Toastify */
+.toastify {
+  position: fixed !important; /* Fija el Toastify sobre todo */
+  top: 20px; /* Ajusta la distancia desde la parte superior */
+  right: 20px; /* Ajusta la distancia desde la derecha */
+  z-index: 9999; /* Asegura que esté por encima de todo */
+  background-color: #00b09b;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  opacity: 0.95;
+}
+
+.toastify.on {
+  z-index: 9999; /* Siempre encima */
+}
+
+#cardContenedor {
+  margin: 30px;
+}
+
+#cardCard {
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+#buttonCard {
+  background-color: #212429;
+  border: none;
+  padding: 15px 28px;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  margin: 3px;
+}
+
+#buttonCard:hover {
+  background-color: #609191;
+}

@@ -1,0 +1,29 @@
+#formularioPost {
+  max-width: 80%; /* Limita el ancho del formulario */
+  margin: 0 auto; /* Centra horizontalmente */
+}
+
+#buttonCard {
+  background-color: #212429;
+  border: none;
+  padding: 15px 28px;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  margin: 3px;
+  width: 100%; /* Ocupar el ancho completo */
+}
+
+#buttonCard:hover {
+  background-color: #609191;
+}
+
+/* Responsividad para pantallas pequeñas */
+@media (max-width: 576px) {
+  .form {
+    max-width: 90%;
+    padding: 15px;
+  }
+}
+  

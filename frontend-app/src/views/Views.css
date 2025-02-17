@@ -1,0 +1,81 @@
+/* Estilos Toastify */
+.toastify {
+  position: fixed !important; /* Fija el Toastify sobre todo */
+  top: 20px; /* Ajusta la distancia desde la parte superior */
+  right: 20px; /* Ajusta la distancia desde la derecha */
+  z-index: 9999; /* Asegura que esté por encima de todo */
+  background-color: #00b09b;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  opacity: 0.95;
+}
+
+.toastify.on {
+  z-index: 9999; /* Siempre encima */
+}
+
+/* HOME */
+
+#contenerTextoHome {
+  display: flex;
+  justify-content: center; /* Centrar horizontalmente */
+  align-items: center; /* Centrar verticalmente */
+  width: 100%;
+  color: white;
+  height: 120px;
+}
+
+#fondoTextoHome {
+  width: 90%;
+  height: 65%;
+  background-color: #609191;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#tituloHome {
+  margin: 0px;
+  font-size: 1.4rem;
+}
+
+/* HEADER Y TÍTULOS EN TODAS LAS VISTAS */
+
+header {
+  display: flex;
+  justify-content: center; /* Centrar horizontalmente */
+  align-items: center; /* Centrar verticalmente */
+  width: 100%;
+  color: white;
+  height: 120px;
+}
+
+#contenerTextoHeader {
+  width: 90%;
+  height: 65%;
+  background-color: #609191;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#textoHeader {
+  margin: 0px;
+  font-size: 1.4rem;
+}
+ 
+#notFoundTexto{
+  text-align: center;
+  margin-top: 20%;
+}
+
+#carritoVacio{
+  text-align: center;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  font-size: 2rem;
+}

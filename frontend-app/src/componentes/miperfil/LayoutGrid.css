@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* Estilo de las columnas */
+.left-column {
+  height: 1700px;
+}
+
+.right-column {
+  background-color: #eeeeee; /* Color gris */
+  height: 1700px;
+}
+
+/* Títulos y contenedores */
+#contenerTextoTitulo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  color: white;
+  height: 120px;
+}
+
+#fondoTextoTitulo {
+  width: 90%;
+  height: 65%;
+  background-color: #609191;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#titulo {
+  margin: 0px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+#perfilTitulo {
+  margin-top: 30px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+#perfilDato {
+  font-family: "Montserrat", sans-serif;
+  margin: 10px 0;
+  font-size: 1rem;
+}
+
+/* Botón personalizado */
+#buttonCardPerfil {
+  background-color: #ffffff;
+  color: black;
+  border: none;
+  padding: 15px 28px;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  margin: 3px;
+  font-family: "Montserrat", sans-serif;
+}
+
+#buttonCardPerfil:hover {
+  background-color: #609191;
+  color: white;
+}
+
+/* 📱 Responsividad */
+@media (max-width: 576px) {
+  .left-column,
+  .right-column {
+    height: auto;
+  }
+
+  #contenerTextoTitulo {
+    height: 100px;
+  }
+
+  #fondoTextoTitulo {
+    height: 50%;
+  }
+
+  #perfilTitulo {
+    font-size: 1.2rem;
+  }
+
+  #perfilDato {
+    font-size: 0.9rem;
+  }
+
+  #buttonCardPerfil {
+    width: 100%;
+    padding: 12px;
+    font-size: 0.9rem;
+  }
+}
+
+@media (min-width: 577px) and (max-width: 991px) {
+  .left-column {
+    height: auto;
+  }
+
+  .right-column {
+    height: auto;
+  }
+
+  #contenerTextoTitulo {
+    height: 110px;
+  }
+
+  #fondoTextoTitulo {
+    height: 55%;
+  }
+
+  #perfilTitulo {
+    font-size: 1.3rem;
+  }
+
+  #perfilDato {
+    font-size: 1rem;
+  }
+
+  #buttonCardPerfil {
+    width: 100%;
+    padding: 14px;
+    font-size: 1rem;
+  }
+}
