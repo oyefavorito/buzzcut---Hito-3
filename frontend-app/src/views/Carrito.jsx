@@ -20,7 +20,7 @@ const Carrito = () => {
 
       <section id="carrito">
         {cart.length === 0 ? (
-          <p id="carritoVacio">Aun no añades pizzas al carrito.</p>
+          <p id="carritoVacio">Aun no añades productos al carrito.</p>
         ) : (
           <CarritoProductos />
         )}
