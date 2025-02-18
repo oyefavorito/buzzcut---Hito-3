@@ -6,12 +6,11 @@ import usuariosRoutes from "./src/routes/usuariosRoutes.js";
 import comprasRoutes from "./src/routes/comprasRoutes.js";
 import colaboracionesRoutes from "./src/routes/colaboracionesRoutes.js";
 
-//import errorHandler from "./middleware/errorMiddleware.js";
-
 dotenv.config();
 const PORT = process.env.PORT || 3000;
 
 const app = express();
+
 // habilita mi cors
 app.use(cors({ origin: "http://localhost:5173" }));
 
@@ -23,8 +22,11 @@ app.use("/usuarios", usuariosRoutes);
 app.use("/compras", comprasRoutes);
 app.use("/colaboraciones", colaboracionesRoutes);
 
-//app.use(errorHandler);
+// Iniciar el servidor solo si no estamos en tests
+if (process.env.NODE_ENV !== "test") {
+  app.listen(PORT, () => {
+    console.log(`🚀 Server running on port ${PORT}`);
+  });
+}
 
-app.listen(PORT, () => {
-  console.log(`Server on  ${PORT}`);
-});
+export default app;

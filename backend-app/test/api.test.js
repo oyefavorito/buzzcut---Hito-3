@@ -4,6 +4,23 @@ import dotenv from "dotenv";
 
 dotenv.config(); // Cargar variables de entorno
 
+// Iniciar servidor manualmente para las pruebas
+let server;
+
+beforeAll((done) => {
+  server = app.listen(3001, () => {
+    console.log("🧪 Test server running on port 3001");
+    done();
+  });
+});
+
+afterAll((done) => {
+  server.close(() => {
+    console.log("🛑 Test server closed");
+    done();
+  });
+});
+
 describe("🧪 Pruebas de API REST", () => {
   const token = process.env.TEST_TOKEN;
 
@@ -25,26 +42,25 @@ describe("🧪 Pruebas de API REST", () => {
   });
 
   test("🔒 GET /colaboraciones/mis-colaboraciones - Sin token", async () => {
-    const response = await request(app).get(
-      "/colaboraciones/mis-colaboraciones"
-    );
+    const response = await request(app).get("/colaboraciones/mis-colaboraciones");
 
     expect(response.status).toBe(401);
     expect(response.body.mensaje).toMatch(/denegado|token/i);
   });
 
-  test("📖 GET /productos/colaboraciones - Listar colaboraciones públicas", async () => {
-    const response = await request(app).get("/productos/colaboraciones");
+  test("📖 GET /colaboraciones - Listar colaboraciones públicas", async () => {
+    const response = await request(app).get("/colaboraciones");
 
     expect(response.status).toBe(200);
     expect(response.body).toHaveProperty("colaboraciones");
     expect(response.body.colaboraciones).toBeInstanceOf(Array);
   });
 
-  test("❌ GET /productos/9999 - Producto no existente", async () => {
-    const response = await request(app).get("/productos/9999");
+  test("❌ GET /colaboraciones/9999 - Producto no existente", async () => {
+    const response = await request(app).get("/colaboraciones/9999");
 
     expect(response.status).toBe(404);
-    expect(response.body.mensaje).toMatch(/no encontrado/i);
+    expect(response.body).toHaveProperty("mensaje");
+    expect(response.body.mensaje).toContain("Colaboración no encontrada");
   });
 });
