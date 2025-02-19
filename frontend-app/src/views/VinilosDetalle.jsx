@@ -1,4 +1,3 @@
-import Footer from "../componentes/footer/Footer.jsx";
 import ProductoDetalle from "../componentes/productoDetalle/ProductoDetalle.jsx";
 
 const VinilosDetalle = () => {
@@ -15,9 +14,6 @@ const VinilosDetalle = () => {
 
       {/*POOL DE PRODUCTOS*/}
       <ProductoDetalle />
-
-      {/*FOOTER*/}
-      <Footer />
     </>
   );
 };

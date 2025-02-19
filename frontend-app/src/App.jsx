@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import "./App.css";
 import BarraNavegacion from "./componentes/barraNavegacion/BarraNavegacion";
-
 import Provider from "./contexts/CardContext";
 import CarouselContext from "./contexts/CarouselContext";
 import CardContext from "./contexts/CardContext";
@@ -17,6 +17,7 @@ import FormularioRegistro from "./views/FormularioRegistro";
 import FormularioLogin from "./views/FormularioLogin";
 import PrivateRoute from "./componentes/miperfil/PrivateRoute";
 import MiPerfil from "./views/MiPerfil";
+import Footer from "./componentes/footer/Footer";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 
@@ -29,40 +30,43 @@ function App() {
       <CarouselContext>
         <CardContext>
           <BrowserRouter>
-            <BarraNavegacion />
-            <Routes>
-              {/* Rutas públicas */}
-              <Route path="/" element={<Home />} />
-              <Route path="/tornamesas" element={<Tornamesas />} />
-              <Route path="/tornamesas/:id" element={<TornamesasDetalle />} />
-              <Route path="/vinilos" element={<Vinilos />} />
-              <Route path="/vinilos/:id" element={<VinilosDetalle />} />
-              <Route path="/audio" element={<Audio />} />
-              <Route path="/audio/:id" element={<AudioDetalle />} />
-              <Route path="/colaboraciones" element={<Colaboraciones />} />
-              <Route
-                path="/colaboraciones/:id"
-                element={<ColaboracionesDetalle />}
-              />
-              <Route path="/carrito" element={<Carrito />} />
-              <Route path="/registro" element={<FormularioRegistro />} />
-              <Route path="/login" element={<FormularioLogin />} />
-              <Route path="*" element={<NotFound />} />
+            <div id="frontEndCompleto">
+              <BarraNavegacion />
+              <Routes>
+                {/* Rutas públicas */}
+                <Route path="/" element={<Home />} />
+                <Route path="/tornamesas" element={<Tornamesas />} />
+                <Route path="/tornamesas/:id" element={<TornamesasDetalle />} />
+                <Route path="/vinilos" element={<Vinilos />} />
+                <Route path="/vinilos/:id" element={<VinilosDetalle />} />
+                <Route path="/audio" element={<Audio />} />
+                <Route path="/audio/:id" element={<AudioDetalle />} />
+                <Route path="/colaboraciones" element={<Colaboraciones />} />
+                <Route
+                  path="/colaboraciones/:id"
+                  element={<ColaboracionesDetalle />}
+                />
+                <Route path="/carrito" element={<Carrito />} />
+                <Route path="/registro" element={<FormularioRegistro />} />
+                <Route path="/login" element={<FormularioLogin />} />
+                <Route path="*" element={<NotFound />} />
 
-              {/* Ruta protegida */}
+                {/* Ruta protegida */}
 
-              <Route
-                path="/miperfil"
-                element={
-                  <PrivateRoute>
-                    <MiPerfil />
-                  </PrivateRoute>
-                }
-              ></Route>
-            </Routes>
+                <Route
+                  path="/miperfil"
+                  element={
+                    <PrivateRoute>
+                      <MiPerfil />
+                    </PrivateRoute>
+                  }
+                ></Route>
+              </Routes>
+            </div>
           </BrowserRouter>
         </CardContext>
       </CarouselContext>
+      <Footer />
     </Provider>
   );
 }

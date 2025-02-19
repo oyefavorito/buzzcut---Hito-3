@@ -50,7 +50,7 @@ const MiPerfil = () => {
   };
 
   return (
-    <Container fluid>
+    <Container fluid id="miPerfilCuerpo">
       <Row>
         {/* 🟣 Columna izquierda: siempre ocupa 3 en pantallas grandes, 12 en móviles */}
         <Col md={3} xs={12} className="left-column bg-dark text-white p-3">

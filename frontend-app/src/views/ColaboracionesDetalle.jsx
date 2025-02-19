@@ -1,4 +1,3 @@
-import Footer from "../componentes/footer/Footer.jsx";
 import ColaboracionDetalle from "../componentes/productoDetalle/ColaboracionDetalle.jsx";
 
 import "./Views.css";
@@ -17,9 +16,6 @@ const ColaboracionesDetalle = () => {
 
       {/*POOL DE COLABORACIONES*/}
       <ColaboracionDetalle />
-
-      {/*FOOTER*/}
-      <Footer />
     </>
   );
 };

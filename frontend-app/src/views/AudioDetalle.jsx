@@ -1,6 +1,4 @@
-import Footer from "../componentes/footer/Footer.jsx";
 import ProductoDetalle from "../componentes/productoDetalle/ProductoDetalle.jsx";
-
 import "./Views.css";
 
 const AudioDetalle = () => {
@@ -17,9 +15,6 @@ const AudioDetalle = () => {
 
       {/*POOL DE PRODUCTOS*/}
       <ProductoDetalle />
-
-      {/*FOOTER*/}
-      <Footer />
     </>
   );
 };

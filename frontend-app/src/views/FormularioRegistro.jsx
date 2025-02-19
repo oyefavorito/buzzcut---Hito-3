@@ -1,7 +1,4 @@
-import { useContext } from "react";
-import { useNavigate } from "react-router-dom";
 import Registro from "../componentes/registro/Registro.jsx";
-import Footer from "../componentes/footer/Footer.jsx";
 
 import "./Views.css";
 
@@ -17,7 +14,6 @@ const FormularioRegistro = () => {
         </div>
       </header>
       <Registro />
-      <Footer />
     </>
   );
 };

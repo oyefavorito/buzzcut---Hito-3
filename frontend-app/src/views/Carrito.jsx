@@ -1,9 +1,7 @@
 import { useContext } from "react";
 import { Context } from "../contexts/CardContext";
 import CarritoProductos from "../componentes/carrito/Carrito.jsx";
-
 import "./Views.css";
-import Footer from "../componentes/footer/Footer.jsx";
 
 const Carrito = () => {
   const { cart } = useContext(Context);
@@ -25,7 +23,6 @@ const Carrito = () => {
           <CarritoProductos />
         )}
       </section>
-      <Footer />
     </>
   );
 };

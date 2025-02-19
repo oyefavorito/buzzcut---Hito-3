@@ -2,14 +2,19 @@
 
 /* Estilo de las columnas */
 .left-column {
-  height: 1700px;
+  min-height: 100vh; /* Asegura que ocupe al menos el alto de la pantalla */
 }
 
 .right-column {
   background-color: #eeeeee; /* Color gris */
-  height: 1700px;
+  min-height: 100vh; /* Que crezca con el contenido */
+  height: auto !important;
+  padding-bottom: 30px;
 }
 
+.miPerfilCuerpo {
+  background-color: #eeeeee;
+}
 /* Títulos y contenedores */
 #contenerTextoTitulo {
   display: flex;
@@ -70,9 +75,14 @@
 
 /* 📱 Responsividad */
 @media (max-width: 576px) {
-  .left-column,
+  .left-column {
+    min-height: auto !important;
+    padding-bottom: 20px;
+  }
+
   .right-column {
-    height: auto;
+    min-height: auto !important; 
+    padding-bottom: 20px;
   }
 
   #contenerTextoTitulo {

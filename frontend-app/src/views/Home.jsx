@@ -7,7 +7,6 @@ import ControlledCarousel from "../componentes/carousel/Carousel.jsx";
 import TornamesasCard from "../componentes/cardProducto/CardTornamesas.jsx";
 import ViniloCard from "../componentes/cardProducto/CardVinilos.jsx";
 import AudioCard from "../componentes/cardProducto/CardAudio.jsx";
-import Footer from "../componentes/footer/Footer.jsx";
 
 import "./Views.css";
 
@@ -66,8 +65,6 @@ const Home = () => {
         </div>
       </div>
       <AudioCard filterCategory="Audio" />
-
-      <Footer />
     </>
   );
 };

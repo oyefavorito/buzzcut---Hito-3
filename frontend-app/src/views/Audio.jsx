@@ -1,6 +1,4 @@
-import Footer from "../componentes/footer/Footer.jsx";
 import CardAudio from "../componentes/cardProducto/CardAudio.jsx";
-
 import "./Views.css";
 
 const Audio = () => {
@@ -17,9 +15,6 @@ const Audio = () => {
 
       {/*POOL DE PRODUCTOS*/}
       <CardAudio filterCategory="Audio" />
-
-      {/*FOOTER*/}
-      <Footer />
     </>
   );
 };

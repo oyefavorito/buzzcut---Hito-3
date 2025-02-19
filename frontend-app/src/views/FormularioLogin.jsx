@@ -1,8 +1,4 @@
-import { useContext } from "react";
-import { useNavigate } from "react-router-dom";
 import Login from "../componentes/login/Login.jsx";
-import Footer from "../componentes/footer/Footer.jsx";
-
 import "./Views.css";
 
 const FormularioLogin = () => {
@@ -17,7 +13,6 @@ const FormularioLogin = () => {
         </div>
       </header>
       <Login />
-      <Footer />
     </>
   );
 };

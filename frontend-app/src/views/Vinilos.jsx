@@ -1,6 +1,4 @@
-import Footer from "../componentes/footer/Footer.jsx";
 import CardVinilos from "../componentes/cardProducto/CardVinilos.jsx";
-
 import "./Views.css";
 
 const Vinilos = () => {
@@ -17,9 +15,6 @@ const Vinilos = () => {
 
       {/*POOL DE PRODUCTOS*/}
       <CardVinilos filterCategory="Vinilos" />
-
-      {/*FOOTER*/}
-      <Footer />
     </>
   );
 };

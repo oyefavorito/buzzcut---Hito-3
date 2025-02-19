@@ -1,4 +1,3 @@
-import Footer from "../componentes/footer/Footer.jsx";
 import ColaboracionCard from "../componentes/cardProducto/CardColaboraciones.jsx";
 
 import "./Views.css";
@@ -17,9 +16,6 @@ const Colaboraciones = () => {
 
       {/*POOL DE PRODUCTOS*/}
       <ColaboracionCard filterCategory="Colaboraciones" />
-
-      {/*FOOTER*/}
-      <Footer />
     </>
   );
 };
