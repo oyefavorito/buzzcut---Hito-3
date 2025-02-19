@@ -1,0 +1,234 @@
+[
+  {
+    "id": "P001",
+    "img": "https://needle.cl/cdn/shop/files/PL3_Nd3_black_offside_no_lid_playing_7f593a6f-f1d2-4bcf-8f18-b65db449958c.jpg?v=1730900783&width=900",
+    "nombre": "Tornamesa Planar 3",
+    "precio": 899910,
+    "descripcion": "Rega es pionera en el uso de bases rígidas y ligeras. El uso inteligente de un núcleo de partículas ligero con un revestimiento de resina fenólica de gran rigidez se convirtió en el pilar del rendimiento de alto nivel conseguido por la ahora icónica gama Planar original.",
+    "categoria": "Tornamesas"
+  },
+  {
+    "id": "P002",
+    "img": "https://needle.cl/cdn/shop/files/637984-at-lp60x_01.png?v=1723613297&width=1950",
+    "nombre": "Tornamesa AT-LP60X",
+    "precio": 179900,
+    "descripcion": "Si estás pensando entrar en el mundo del vinilo o si quieres reproducir esporádicamente tus discos, esta es tu tornamesa. Si tuviéramos que hacer una analogía en pocas palabras, esta tornamesa es el clásico auto bueno bonito y barato que si lo cuidas bien te durará años. Si bien en internet puedes encontrar usuarios que la aman también hay otras personas que la miran con recelo dado su bajo costo y su brazo. Para nosotros es una tornamesa que apaña bastante y que recomendamos si buscas una automática que reproduzca discos de 33-1/3 como de 45 rpm, las dos velocidades más comunes en el mundo del vinilo.",
+    "categoria": "Tornamesas"
+  },
+  {
+    "id": "P003",
+    "img": "https://needle.cl/cdn/shop/files/929123-A5__Wireless.png?v=1719615758&width=500",
+    "nombre": "Tornamesa Debut S",
+    "precio": 454300,
+    "descripcion": "La primera tornamesa Debut, presentado a finales de la década de 1990, fue una revolución para la industria del hi-fi. Por primera vez después de la llegada del Compact Disc y la supuesta desaparición de los discos de vinilo, surgió un producto analógico en el mercado masivo, algo que todos los amantes de la música podían permitirse. Ahora Pro-Ject se complace en distribuir su nueva Debut con brazo en forma de S y la cápsula de alta calidad Sumiko Rainier MM.",
+    "categoria": "Tornamesas"
+  },
+  {
+    "id": "P004",
+    "img": "https://needle.cl/cdn/shop/files/869686-rega-planar6-hvid-1.jpg?v=1719615934&width=540",
+    "nombre": "Tornamesa Planar 6",
+    "precio": 1399920,
+    "descripcion": "La Planar 6 tiene un objetivo claro: reproducir su vinilo con la mayor precisión posible. Rega ha diseñado todos los aspectos de esta tornamesa para extraer la mayor cantidad posible de detalles de la superficie del vinilo. Se han utilizado materiales avanzados y soluciones de ingeniería en todo el diseño para garantizar el mayor nivel de rendimiento. La PSU Neo ofrece control antivibraciones avanzado y ajuste de velocidad electrónico ajustable por el usuario que solo se encontraba en el RP10, hasta ahora.",
+    "categoria": "Tornamesas"
+  },
+  {
+    "id": "P005",
+    "img": "https://needle.cl/cdn/shop/files/637187-2.jpg?v=1737735728&width=1950",
+    "nombre": "Tornamesa Planar 1 Matt",
+    "precio": 332910,
+    "descripcion": "La nueva Planar 1 es la tornamesa más amigable para todos. El nuevo brazo RB110 viene con el control de bias (antiskating) calibrado de fábrica, por lo que la tornamesa queda lista para su uso apenas la sacas de la caja. Simplemente deslice el contrapeso en la parte trasera del brazo hasta el tope, quite el protector de la aguja y empieza a escuchar tu música favorita.",
+    "categoria": "Tornamesas"
+  },
+  {
+    "id": "P006",
+    "img": "https://needle.cl/cdn/shop/files/OC05OTM0LmpwZWc.jpg?v=1724176268&width=600",
+    "nombre": "Mac Demarco - Vinilo LP 2",
+    "precio": 31900,
+    "descripcion": "McBriare Samuel Lanyon Mac DeMarco, de nacimiento Vernor Winfield McBriare Smith IV, es un cantautor, multinstrumentista y productor discográfico canadiense. Se le considera una de las principales figuras de la escena del bedroom pop de los 2010.",
+    "categoria": "Vinilos"
+  },
+  {
+    "id": "P007",
+    "img": "https://needle.cl/cdn/shop/files/Mi00NzAzLmpwZWc.jpg?v=1724184578&width=600",
+    "nombre": "King Krule - Vinilo 6 feeth beneath the moon",
+    "precio": 34900,
+    "descripcion": "Archy Ivan Marshall, conocido como King Krule, es un cantante, rapero, compositor, productor musical y músico inglés. Comenzó grabando música en 2010 bajo el apodo de Zoo Kid. Al año siguiente adoptó su nombre actual.",
+    "categoria": "Vinilos"
+  },
+  {
+    "id": "P008",
+    "img": "https://needle.cl/cdn/shop/files/438480-R-3433715-1330218195_png.jpg?v=1719617094&width=600",
+    "nombre": "Lana del Rey - Vinilo Born to Die",
+    "precio": 42900,
+    "descripcion": "Elizabeth Woolridge Grant, conocida artísticamente como Lana Del Rey, es una cantante, compositora, modelo, actriz, escritora, productora y poetisa estadounidense. Su música se distingue por su calidad cinematográfica, su estilo retro y su exploración del romance trágico, el glamur y la melancolía",
+    "categoria": "Vinilos"
+  },
+  {
+    "id": "P009",
+    "img": "https://needle.cl/cdn/shop/files/395610-AM.jpg?v=1719616834&width=600",
+    "nombre": "Arctic Monkeys - Vinilo AM",
+    "precio": 36900,
+    "descripcion": "Arctic Monkeys es una banda británica de indie rock, formada en Sheffield, Reino Unido. El grupo está compuesto por el guitarrista principal y vocalista Alex Turner, el guitarrista Jamie Cook, el baterista Matt Helders y el bajista Nick O'Malley.",
+    "categoria": "Vinilos"
+  },
+  {
+    "id": "P0010",
+    "img": "https://needle.cl/cdn/shop/files/OS0zMDQ4LmpwZWc.jpg?v=1724184704&width=599",
+    "nombre": "Tame Impala - Vinilo Lonerism",
+    "precio": 51900,
+    "descripcion": "Tame Impala es el proyecto de música psicodélica del multiinstrumentista australiano Kevin Parker. En el estudio de grabación, Parker compone, graba, interpreta y produce toda la música del proyecto. En sus giras, Tame Impala está formado por Parker, Dominic Simper, Jay Watson, Cam Avery y Julien Barbagallo.",
+    "categoria": "Vinilos"
+  },
+  {
+    "id": "P0011",
+    "img": "https://needle.cl/cdn/shop/files/481497-71Y55FU5VGL._SL1000.jpg?v=1719617215&width=600",
+    "nombre": "Amy Winehouse - Vinilo Back to Black",
+    "precio": 60900,
+    "descripcion": "Amy Jade Winehouse fue una cantante, compositora y multiinstrumentista británica. Conocida por su poderosa y profunda voz de contralto y su ecléctica mezcla de géneros musicales, que incluyen soul, jazz, R&B y ritmos caribeños como el ska.",
+    "categoria": "Vinilos"
+  },
+  {
+    "id": "P0012",
+    "img": "https://needle.cl/cdn/shop/files/MjktNjg5NC5qcGVn.jpg?v=1724103660&width=600",
+    "nombre": "Boy Harsher - Vinilo Careful",
+    "precio": 29900,
+    "descripcion": "Boy Harsher es un grupo estadounidense de música electrónica formado en 2013 en Savannah, Georgia. Actualmente con sede en Northampton, Massachusetts, la banda está formada por el vocalista Jae Matthews y el productor Augustus Muller.",
+    "categoria": "Vinilos"
+  },
+  {
+    "id": "P0013",
+    "img": "https://needle.cl/cdn/shop/files/MzQtNzQxMy5qcGVn.jpg?v=1724184561&width=600",
+    "nombre": "Iggy Pop- Vinilo Lust for life",
+    "precio": 41900,
+    "descripcion": "James Newell Osterberg, Jr., más conocido por su nombre artístico Iggy Pop, es un cantante, músico, compositor, actor y locutor de radio estadounidense.",
+    "categoria": "Vinilos"
+  },
+  {
+    "id": "P0014",
+    "img": "https://needle.cl/cdn/shop/files/178358-rumours.jpg?v=1719616869&width=600",
+    "nombre": "Fleetwood Mac- Vinilo Rumours",
+    "precio": 16900,
+    "descripcion": "Fleetwood Mac fue una legendaria banda de rock anglonorteamericana. Fleetwood Mac se formó en julio de 1967 en Londres, a partir de una banda previa de blus, los Bluesbreakers, donde había tocado inicialmente Eric Clapton.",
+    "categoria": "Vinilos"
+  },
+  {
+    "id": "P0015",
+    "img": "https://needle.cl/cdn/shop/files/407265-R-8957729-1477237326-8787_jpeg.jpg?v=1719616878&width=600",
+    "nombre": "Pink Floyd - Vinilo The Wall",
+    "precio": 61900,
+    "descripcion": "Pink Floyd es una banda de rock británica, fundada en Londres en 1965. Considerada un icono cultural del siglo XX y una de las bandas más influyentes, exitosas y aclamadas en la historia de la música.",
+    "categoria": "Vinilos"
+  },
+  {
+    "id": "P0016",
+    "img": "https://needle.cl/cdn/shop/files/NDYtNDU5Mi5qcGVn.jpg?v=1724184677&width=591",
+    "nombre": "Smashing Pumpkins - Vinilo Siamese Dreams",
+    "precio": 70900,
+    "descripcion": "The Smashing Pumpkins es una banda estadounidense de rock alternativo formada en Chicago en 1988. Fundada en un inicio por el vocalista Billy Corgan y James Iha, poco después incluyeron a Jimmy Chamberlin y D'arcy Wretzky, completando su formación original.",
+    "categoria": "Vinilos"
+  },
+  {
+    "id": "P0017",
+    "img": "https://needle.cl/cdn/shop/files/438484-R-667892-1249548979_jpeg.jpg?v=1719617040&width=600",
+    "nombre": "The Strokes - Vinilo Is this it",
+    "precio": 30900,
+    "descripcion": "The Strokes es una banda de rock estadounidense de la ciudad de Nueva York. Formada en 1998, la banda está compuesta por el cantante Julian Casablancas, los guitarristas Nick Valensi y Albert Hammond, Jr., el bajista Nikolai Fraiture y el baterista Fabrizio Moretti.",
+    "categoria": "Vinilos"
+  },
+  {
+    "id": "P0018",
+    "img": "https://needle.cl/cdn/shop/files/505647-oberon_vokal_3.png?v=1719614672&width=500",
+    "nombre": "Parlante Oberon Vokal",
+    "precio": 224950,
+    "descripcion": "El parlante DALI OBERON VOKAL ha sido diseñado para ser la unión perfecta con cualquier altavoz de la serie OBEORN como forma de completar un sistema surround, ofreciendo un sonido detallado, preciso y claro tanto para películas como para conciertos. La posición del puerto de bajos en el frente permite difrentes opciones de posicionamiento en el mueble. Hemos unido los mejores componentes de nuestros altavoces en OBERON VOKAL que ofrece audio de calidad, apariencia y versatilidad. Los OBERON VOKAL incorporan un tweeter de cúpula blanda sobredimensionado de 29mm junto con un woofer SMC de fibra de madera - apoyado por el puerto de bajos frontal, lo cual hace que sea facil de situar. Por esta razón, es la perfecta opción para configuraciones surround.",
+    "categoria": "Audio"
+  },
+  {
+    "id": "P0019",
+    "img": "https://needle.cl/cdn/shop/files/789481-1.png?v=1719615484&width=540",
+    "nombre": "Subwoofer S6",
+    "precio": 263920,
+    "descripcion": "El Audioengine S6 establece un nuevo estándar en cuanto a rendimiento y tamaño. Con 210 vatios de potencia en un pequeño paquete que cabe en casi cualquier lugar, el S6 es la extensión de graves definitiva para su escritorio, cine en casa o configuración de juegos. Con un woofer de disparo frontal en una caja sellada, el S6 ofrece unos graves profundos, suaves y contundentes que desafían las expectativas.",
+    "categoria": "Audio"
+  },
+  {
+    "id": "P0020",
+    "img": "https://needle.cl/cdn/shop/files/656265-spektor1-2.png?v=1719615020&width=540",
+    "nombre": "Parlantes Spektor 1",
+    "precio": 206706,
+    "descripcion": "El DALI SPEKTOR 1 ofrece un diseño basado en los principios acústicos DALI a una nueva franja de precio, abriendo la posibilidad a nuevos melómanos y cinéfilos de dejarse seducir por la verdadera Alta Fidelidad. Lograr una reproducción tan HiFi de una caja acústica a este precio no sólo ha requerido de toda nuestra experiencia y saber hacer, sino también de horas y horas en la sala de escucha, mejorando los diseños de driver y crossover para lograr la reproducción de audio perfecta.",
+    "categoria": "Audio"
+  },
+  {
+    "id": "P0021",
+    "img": "https://needle.cl/cdn/shop/files/540847-spektor-2.jpg?v=1719615030&width=1200",
+    "nombre": "Parlantes Spektor 2",
+    "precio": 281906,
+    "descripcion": "Los DALI SPEKTOR 2 son parlantes compactos de alta fidelidad que, gracias a su mayor volumen interno comparado con el SPEKTOR 1, ofrecen un rendimiento superior en los bajos. Son ideales para ser montados en un mueble, pared o soporte, adaptándose perfectamente a cualquier sistema de sonido Hi-Fi.",
+    "categoria": "Audio"
+  },
+  {
+    "id": "P0022",
+    "img": "https://vinilospormayor.cl/cdn/shop/files/R-23510150-1662834272-6633_720x.jpg?v=1683323553",
+    "nombre": "Babasonicos - Vinilo Trinchera",
+    "precio": 12500,
+    "descripcion": "Icónica banda de rock argentina que ha roto el statu quo del rock latinoamericano, empujando los límites establecidos en repetidas ocasiones durante los años 90 y 2000. Consiguieron desestabilizar la música rock y crear nuevas tendencias, sin conformarse nunca con la norma.",
+    "categoria": "Colaboraciones"
+  },
+  {
+    "id": "P0023",
+    "img": "https://http2.mlstatic.com/D_NQ_NP_2X_698317-MLU77522260375_072024-F.webp",
+    "nombre": "Lykke Li - Vinilo So Sad So Sexy",
+    "precio": 30000,
+    "descripcion": "Cantante y compositora sueca. Ganadora de dos premios Grammis, debutó en 2008, con su primer álbum de estudio, Youth Novels. Sus canciones a menudo mezclan elementos del indie pop, dream pop y electrónica.",
+    "categoria": "Colaboraciones"
+  },
+  {
+    "id": "P0024",
+    "img": "https://i.blogs.es/3f5cde/sony-mdr-1rbt/450_1000.jpg",
+    "nombre": "Audífonos Bluetooth Sonos Sony Over Ear Headphone",
+    "precio": 50000,
+    "descripcion": "Los Sony Sonos Ace te permiten sumergirte completamente en tu música favorita. Gracias a su cancelación activa de ruido, puedes aislarte del mundo exterior y disfrutar de cada matiz y detalle de tus canciones, creando una sensación de inmersión total.",
+    "categoria": "Colaboraciones"
+  },
+  {
+    "id": "P0025",
+    "img": "https://http2.mlstatic.com/D_NQ_NP_2X_711611-MLA79463688110_102024-F.webp",
+    "nombre": "Beyonce - Vinilo Lemonade",
+    "precio": 55000,
+    "descripcion": "Es el segundo álbum visual de Beyoncé, luego de su quinto álbum de estudio homónimo (2013), y un álbum conceptual con un ciclo de canciones que relata el viaje emocional de Beyoncé después de la infidelidad de su esposo en un contexto generacional y racial.",
+    "categoria": "Colaboraciones"
+  },
+  {
+    "id": "P0026",
+    "img": "https://http2.mlstatic.com/D_NQ_NP_2X_611155-MLU79154897319_092024-F.webp",
+    "nombre": "Christina y los Subterraneos - Vinilo Que me parta un rayo",
+    "precio": 12500,
+    "descripcion": "Christina y Los Subterráneos fue una banda española de indie pop, liderada por Christina Rosenvinge, autora de todas las canciones. La formación nunca llegó a ser fija, por lo que gran número de músicos tocaron en ella hasta que Christina se deshizo del nombre de banda y continuó con su propio nombre.",
+    "categoria": "Colaboraciones"
+  },
+  {
+    "id": "P0027",
+    "img": "https://musicland.cl/wp-content/uploads/2020/12/KHRUANGBINMORDECHAI-800x800.jpg",
+    "nombre": "Khruangbin - Vinilo Mordechai",
+    "precio": 25600,
+    "descripcion": "El trío Khruangbin, con base en Texas, comenzó a explorar el funk tailandés, el gospel, el R&B, el surf, el rock psicodélico y el dub de los años 60 y 70, creando instrumentales relajantes que parecían hechos a medida para los beatmakers en busca de ritmo y los felices bailarines de los festivales al aire libre.",
+    "categoria": "Colaboraciones"
+  },
+  {
+    "id": "P0028",
+    "img": "https://http2.mlstatic.com/D_NQ_NP_2X_726997-MLU72857774923_112023-F.webp",
+    "nombre": "Madonna - Vinilo Confessions of the Dance Floor",
+    "precio": 29500,
+    "descripcion": "Confessions on a Dance Floor fusionó elementos de la música disco de los años 70, el electropop de los 80 y la música de club de los 2000. Madonna decidió incorporar elementos con influencia disco en sus canciones mientras intentaba no rehacer su música del pasado, sino que eligió rendir homenaje a artistas como los Bee Gees y Giorgio Moroder.",
+    "categoria": "Colaboraciones"
+  },
+  {
+    "id": "P0029",
+    "img": "https://dojiw2m9tvv09.cloudfront.net/36300/product/X_taupe3110.jpg?29&time=1739077500",
+    "nombre": "Crosley Cruiser Deluxe BT Taupe",
+    "precio": 67000,
+    "descripcion": "Tocadiscos de 3 velocidades (33 , 45 y 78 RPM), receptor Bluetooth integrado, altavoces estéreo integrados de rango completo, control de tono ajustable, palanca de señalización, entrada auxiliar, salida RCA y toma de auriculares.",
+    "categoria": "Colaboraciones"
+  }
+]

@@ -1,0 +1,20 @@
+[
+  {
+    "id": "C001",
+    "img": "https://needle.cl/cdn/shop/files/P6_05_1300X730_1.jpg?v=1722529663&width=900",
+    "texto": "TORNAMESAS",
+    "descripcion": "Se adaptan a todos, desde principiantes hasta melómanos"
+  },
+  {
+    "id": "C002",
+    "img": "https://cdn.computerhoy.com/sites/navi.axelspringer.es/public/media/image/2017/07/250013-australia-abrira-nueva-fabrica-vinilos-30-anos.jpg?tf=1200x",
+    "texto": "VINILOS",
+    "descripcion": "Nuevas novedades cada semana"
+  },
+  {
+    "id": "C003",
+    "img": "https://i.blogs.es/45949e/altafidelidadap/1366_2000.jpg",
+    "texto": "AUDIO",
+    "descripcion": "Parlantes RCA, bluetooth y audífonos"
+  }
+]
