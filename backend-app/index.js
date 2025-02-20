@@ -12,7 +12,13 @@ const PORT = process.env.PORT || 3000;
 const app = express();
 
 // habilita mi cors
-app.use(cors({ origin: "http://localhost:5173" }));
+app.use(
+  cors({
+    origin: [process.env.FRONTEND_URL, "http://localhost:5173"],
+    credentials: true, // Permite cookies y autenticación si las usas
+    methods: ["GET", "POST", "PUT", "DELETE"], // Métodos permitidos
+  })
+);
 
 // habilita mis middlewares
 app.use(express.json());
