@@ -3,7 +3,7 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { Button, Col, Form, Row } from "react-bootstrap";
 
-const BASE_URL = process.env.REACT_APP_BACKEND_URL; // URL del backend desde las variables de entorno
+const BASE_URL = import.meta.env.VITE_BACKEND_URL; // URL del backend desde las variables de entorno
 
 const Login = () => {
   const navigate = useNavigate();

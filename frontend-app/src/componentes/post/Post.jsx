@@ -1,7 +1,7 @@
 import "./Post.css";
 import React, { useState } from "react";
 
-const BASE_URL = process.env.REACT_APP_BACKEND_URL; // URL del backend desde las variables de entorno
+const BASE_URL = import.meta.env.VITE_BACKEND_URL; // URL del backend desde las variables de entorno
 
 const Post = () => {
   const [titulo, setTitulo] = useState("");

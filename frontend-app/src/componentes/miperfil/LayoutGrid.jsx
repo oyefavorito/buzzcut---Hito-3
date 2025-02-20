@@ -7,7 +7,7 @@ import CardMisCompras from "../cardProducto/CardMisCompras";
 import CardMisColaboraciones from "../cardProducto/CardMisColaboraciones";
 import Post from "../post/Post";
 
-const BASE_URL = process.env.REACT_APP_BACKEND_URL; // URL del backend desde las variables de entorno
+const BASE_URL = import.meta.env.VITE_BACKEND_URL; // URL del backend desde las variables de entorno
 
 const MiPerfil = () => {
   const [usuario, setUsuario] = useState(null);

@@ -2,7 +2,7 @@ import "./Card.css";
 import React, { useState, useEffect } from "react";
 import { Row, Col, Card } from "react-bootstrap";
 
-const BASE_URL = process.env.REACT_APP_BACKEND_URL; // URL del backend desde las variables de entorno
+const BASE_URL = import.meta.env.VITE_BACKEND_URL; // URL del backend desde las variables de entorno
 
 const CardMisColaboraciones = () => {
   const [colaboraciones, setColaboraciones] = useState([]);
