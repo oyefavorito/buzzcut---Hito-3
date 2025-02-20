@@ -3,6 +3,8 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { Button, Col, Form, Row } from "react-bootstrap";
 
+const BASE_URL = process.env.REACT_APP_BACKEND_URL; // URL del backend desde las variables de entorno
+
 const Registro = () => {
   const navigate = useNavigate();
 
@@ -27,7 +29,7 @@ const Registro = () => {
     };
 
     try {
-      const response = await fetch("http://localhost:3000/usuarios/register", {
+      const response = await fetch(`${BASE_URL}/usuarios/register`, {  // Reemplazo de la URL local
         method: "POST",
         headers: {
           "Content-Type": "application/json",

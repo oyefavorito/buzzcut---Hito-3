@@ -6,6 +6,8 @@ import Toastify from "toastify-js";
 import IconoCarrito from "../IconoCarrito";
 import { Context } from "../../contexts/CardContext";
 
+const BASE_URL = process.env.REACT_APP_BACKEND_URL; // URL del backend desde las variables de entorno
+
 const ColaboracionDetalle = () => {
   const { id } = useParams();
   const { addCart, monedaLocal } = useContext(Context);
@@ -16,9 +18,7 @@ const ColaboracionDetalle = () => {
   useEffect(() => {
     const obtenerProducto = async () => {
       try {
-        const response = await fetch(
-          `http://localhost:3000/colaboraciones/${id}`
-        );
+        const response = await fetch(`${BASE_URL}/colaboraciones/${id}`); // Reemplazo de la URL local
         const data = await response.json();
         if (response.ok) {
           setProducto(data);

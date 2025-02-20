@@ -2,6 +2,8 @@ import "./Card.css";
 import React, { useState, useEffect } from "react";
 import { Row, Col, Card } from "react-bootstrap";
 
+const BASE_URL = process.env.REACT_APP_BACKEND_URL; // URL del backend desde las variables de entorno
+
 const CardMisCompras = () => {
   const [compras, setCompras] = useState([]);
   const [mensaje, setMensaje] = useState("");
@@ -15,9 +17,9 @@ const CardMisCompras = () => {
       }
 
       try {
-        const response = await fetch("http://localhost:3000/usuarios/mis-compras", {
+        const response = await fetch(`${BASE_URL}/usuarios/mis-compras`, { // Reemplazo de la URL local
           method: "GET",
-          headers: { "Authorization": `Bearer ${token}` }
+          headers: { Authorization: `Bearer ${token}` },
         });
 
         const data = await response.json();
@@ -40,10 +42,13 @@ const CardMisCompras = () => {
   return (
     <Row xs={1} md={3} lg={4} className="g-3 mb-3" id="cardContenedor">
       {compras.length > 0 ? (
-        compras.map((producto) => (
-          <Col key={producto.id_producto}>
+        compras.map((producto, index) => (
+          <Col key={`compra-${producto.id_producto || index}`}>
             <Card id="cardCard">
-              <Card.Img src={producto.img_url} alt={producto.nombre} />
+              <Card.Img
+                src={producto.img_url || "/default-image.jpg"} // Imagen por defecto si no tiene URL
+                alt={producto.nombre}
+              />
               <Card.Body>
                 <Card.Title>{producto.nombre}</Card.Title>
                 <Card.Text>${producto.precio}</Card.Text>

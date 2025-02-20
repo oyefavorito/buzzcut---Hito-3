@@ -7,6 +7,8 @@ import CardMisCompras from "../cardProducto/CardMisCompras";
 import CardMisColaboraciones from "../cardProducto/CardMisColaboraciones";
 import Post from "../post/Post";
 
+const BASE_URL = process.env.REACT_APP_BACKEND_URL; // URL del backend desde las variables de entorno
+
 const MiPerfil = () => {
   const [usuario, setUsuario] = useState(null);
   const [mensaje, setMensaje] = useState("");
@@ -21,16 +23,13 @@ const MiPerfil = () => {
     const obtenerPerfil = async () => {
       const token = localStorage.getItem("token");
       try {
-        const response = await fetch(
-          "http://localhost:3000/usuarios/miperfil",
-          {
-            method: "GET",
-            headers: {
-              "Content-Type": "application/json",
-              Authorization: `Bearer ${token}`,
-            },
-          }
-        );
+        const response = await fetch(`${BASE_URL}/usuarios/miperfil`, { // Reemplazo de la URL local
+          method: "GET",
+          headers: {
+            "Content-Type": "application/json",
+            Authorization: `Bearer ${token}`,
+          },
+        });
         const data = await response.json();
         if (response.ok) {
           setUsuario(data.perfil);

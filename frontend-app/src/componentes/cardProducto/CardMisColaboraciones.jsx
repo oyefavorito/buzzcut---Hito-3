@@ -2,6 +2,8 @@ import "./Card.css";
 import React, { useState, useEffect } from "react";
 import { Row, Col, Card } from "react-bootstrap";
 
+const BASE_URL = process.env.REACT_APP_BACKEND_URL; // URL del backend desde las variables de entorno
+
 const CardMisColaboraciones = () => {
   const [colaboraciones, setColaboraciones] = useState([]);
   const [error, setError] = useState("");
@@ -12,7 +14,7 @@ const CardMisColaboraciones = () => {
 
       try {
         const response = await fetch(
-          "http://localhost:3000/usuarios/mis-colaboraciones",
+          `${BASE_URL}/usuarios/mis-colaboraciones`, // Reemplazo de la URL local
           {
             method: "GET",
             headers: {
@@ -41,9 +43,12 @@ const CardMisColaboraciones = () => {
     <Row xs={1} md={3} lg={4} className="g-3 mb-3" id="cardContenedor">
       {colaboraciones.length > 0 ? (
         colaboraciones.map((producto, index) => (
-          <Col key={producto.id_producto || index}>
+          <Col key={`colaboracion-${producto.id_producto || index}`}>
             <Card id="cardCard">
-              <Card.Img src={producto.img_url} alt={producto.nombre} />
+              <Card.Img
+                src={producto.img_url || "/default-image.jpg"} // Imagen por defecto si no tiene URL
+                alt={producto.nombre}
+              />
               <Card.Body>
                 <Card.Title>{producto.nombre}</Card.Title>
                 <Card.Text>${producto.precio}</Card.Text>

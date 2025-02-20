@@ -1,6 +1,7 @@
 import "./Post.css";
-
 import React, { useState } from "react";
+
+const BASE_URL = process.env.REACT_APP_BACKEND_URL; // URL del backend desde las variables de entorno
 
 const Post = () => {
   const [titulo, setTitulo] = useState("");
@@ -25,17 +26,15 @@ const Post = () => {
     };
 
     try {
-      const response = await fetch(
-        "http://localhost:3000/colaboraciones/colaborar",
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-            Authorization: `Bearer ${localStorage.getItem("token")}`,
-          },
-          body: JSON.stringify(nuevoProducto),
-        }
-      );
+      const response = await fetch(`${BASE_URL}/colaboraciones/colaborar`, {
+        // Reemplazo de la URL local
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: `Bearer ${localStorage.getItem("token")}`,
+        },
+        body: JSON.stringify(nuevoProducto),
+      });
 
       const data = await response.json();
 

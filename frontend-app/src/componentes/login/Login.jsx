@@ -3,6 +3,8 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { Button, Col, Form, Row } from "react-bootstrap";
 
+const BASE_URL = process.env.REACT_APP_BACKEND_URL; // URL del backend desde las variables de entorno
+
 const Login = () => {
   const navigate = useNavigate();
 
@@ -14,10 +16,9 @@ const Login = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    const usuario = { correo, clave };
-
     try {
-      const response = await fetch("http://localhost:3000/usuarios/login", {
+      const response = await fetch(`${BASE_URL}/usuarios/login`, {
+        // Reemplazo de la URL local
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -29,13 +30,13 @@ const Login = () => {
 
       if (response.ok) {
         localStorage.setItem("token", data.token); // Guardar el token en localStorage
-        setMensaje("Inicio de sesión exitoso.");
-        setTimeout(() => navigate("/miperfil"), 1000); // Redirigir después de 1 segundos
+        setMensaje("✅ Inicio de sesión exitoso. Redirigiendo...");
+        setTimeout(() => navigate("/miperfil"), 1000); // Redirigir después de 1 segundo
       } else {
-        setMensaje(data.mensaje || "Error en el inicio de sesión.");
+        setMensaje(`❌ ${data.mensaje || "Error en el inicio de sesión."}`);
       }
     } catch (error) {
-      console.error("Error en la solicitud:", error);
+      console.error("❌ Error en la solicitud:", error);
       setMensaje("Error en la conexión con el servidor.");
     }
   };
