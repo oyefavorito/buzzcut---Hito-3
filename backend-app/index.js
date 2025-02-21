@@ -8,17 +8,13 @@ import colaboracionesRoutes from "./src/routes/colaboracionesRoutes.js";
 
 dotenv.config();
 const PORT = process.env.PORT || 3000;
+const FRONTEND_URL =
+  process.env.FRONTEND_URL || "https://sensational-biscotti-5f8579.netlify.app";
 
 const app = express();
 
 // habilita mi cors
-app.use(
-  cors({
-    origin: [process.env.FRONTEND_URL, "http://localhost:5173"],
-    credentials: true, // Permite cookies y autenticación si las usas
-    methods: ["GET", "POST", "PUT", "DELETE"], // Métodos permitidos
-  })
-);
+app.use(cors({ origin: FRONTEND_URL, credentials: true }));
 
 // habilita mis middlewares
 app.use(express.json());
