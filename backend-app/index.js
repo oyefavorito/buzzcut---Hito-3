@@ -14,7 +14,13 @@ const FRONTEND_URL =
 const app = express();
 
 // habilita mi cors
-app.use(cors({ origin: FRONTEND_URL, credentials: true }));
+app.use(
+  cors({
+    origin: process.env.FRONTEND_URL, // Permitir solo la URL de Netlify
+    methods: ["GET", "POST", "PUT", "DELETE"],
+    credentials: true,
+  })
+);
 
 // habilita mis middlewares
 app.use(express.json());
