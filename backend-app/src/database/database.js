@@ -4,14 +4,21 @@ dotenv.config();
 
 const { Pool } = pg;
 
-// Configuración usando DATABASE_URL
-const config = {
-  connectionString: process.env.DATABASE_URL, // Usamos directamente la URL de conexión
-  ssl: {
-    rejectUnauthorized: false, // Necesario para conexiones a Railway
-  },
-  allowExitOnIdle: true,
-};
+// Configuración de conexión según el entorno
+const isProduction = process.env.NODE_ENV === "production";
+
+const config = isProduction
+  ? {
+      connectionString: process.env.DATABASE_URL, // Usamos directamente la URL en producción
+      ssl: { rejectUnauthorized: false }, // Necesario para Railway y Render
+    }
+  : {
+      user: process.env.DB_USER,
+      host: process.env.DB_HOST,
+      database: process.env.DB_NAME,
+      password: process.env.DB_PASSWORD,
+      port: process.env.DB_PORT,
+    };
 
 const pool = new Pool(config);
 
@@ -21,8 +28,8 @@ const database = (query, values) =>
     .query(query, values)
     .then(({ rows }) => rows)
     .catch(({ code, message }) => {
-      const error = { status: false, code, message };
-      throw error;
+      console.error("❌ Error en consulta SQL:", { code, message });
+      throw { status: false, code, message };
     });
 
 // Comprobar conexión

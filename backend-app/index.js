@@ -9,19 +9,19 @@ import colaboracionesRoutes from "./src/routes/colaboracionesRoutes.js";
 dotenv.config();
 const PORT = process.env.PORT || 3000;
 const FRONTEND_URL =
-  process.env.FRONTEND_URL || "https://sensational-biscotti-5f8579.netlify.app";
+  process.env.FRONTEND_URL?.replace(/\/$/, "") ||
+  "https://sensational-biscotti-5f8579.netlify.app";
 
 const app = express();
 
 // habilita mi cors
-app.use(cors({
-  origin: [
-    process.env.FRONTEND_URL, 
-    process.env.FRONTEND_URL.replace(/\/$/, "") // Permite la URL sin la barra final
-  ],
-  methods: ["GET", "POST", "PUT", "DELETE"],
-  credentials: true
-}));
+app.use(
+  cors({
+    origin: FRONTEND_URL, // Solo la URL limpia
+    methods: ["GET", "POST", "PUT", "DELETE"],
+    credentials: true,
+  })
+);
 
 // habilita mis middlewares
 app.use(express.json());
