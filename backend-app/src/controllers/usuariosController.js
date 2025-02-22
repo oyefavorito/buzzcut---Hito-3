@@ -32,15 +32,23 @@ export const registrarUsuario = async (req, res) => {
 // Iniciar Sesión (Genera JWT)
 export const loginUsuario = async (req, res) => {
   const { correo, clave } = req.body;
+  console.log("📌 Recibida solicitud de login:", { correo });
 
   try {
     const usuario = await obtenerUsuarioPorCorreo(correo);
-    if (!usuario)
+
+    if (!usuario) {
+      console.error("❌ Usuario no encontrado:", correo);
       return res.status(401).json({ mensaje: "Credenciales inválidas" });
+    }
+
+    console.log("✅ Usuario encontrado:", usuario.correo);
 
     const validPassword = await bcrypt.compare(clave, usuario.clave);
-    if (!validPassword)
+    if (!validPassword) {
+      console.error("❌ Contraseña incorrecta para usuario:", usuario.correo);
       return res.status(401).json({ mensaje: "Credenciales inválidas" });
+    }
 
     const token = jwt.sign(
       { id: usuario.id_usuario, correo: usuario.correo },
@@ -48,8 +56,13 @@ export const loginUsuario = async (req, res) => {
       { expiresIn: "2h" }
     );
 
+    console.log(
+      "✅ Token generado correctamente para usuario:",
+      usuario.correo
+    );
     res.json({ mensaje: "Login exitoso", token });
   } catch (error) {
+    console.error("❌ Error en login:", error);
     res.status(500).json({ mensaje: "Error en el servidor", error });
   }
 };
@@ -105,11 +118,9 @@ export const obtenerColaboracionesUsuario = async (req, res) => {
     const colaboraciones = await database(query, [userId]);
 
     if (colaboraciones.length === 0) {
-      return res
-        .status(404)
-        .json({
-          mensaje: "No se encontraron colaboraciones para este usuario",
-        });
+      return res.status(404).json({
+        mensaje: "No se encontraron colaboraciones para este usuario",
+      });
     }
 
     res.json({ colaboraciones });
