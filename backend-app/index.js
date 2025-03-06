@@ -8,25 +8,36 @@ import colaboracionesRoutes from "./src/routes/colaboracionesRoutes.js";
 
 dotenv.config();
 const PORT = process.env.PORT || 3000;
-const FRONTEND_URL =
-  process.env.FRONTEND_URL?.replace(/\/$/, "") ||
-  "https://sensational-biscotti-5f8579.netlify.app";
+const ALLOWED_ORIGINS = [
+  "https://sensational-biscotti-5f8579.netlify.app",
+  "https://buzzcut-backend-app.onrender.com",
+];
+
+// Función de validación de origen para CORS
+const corsOptions = {
+  origin: function (origin, callback) {
+    if (!origin || ALLOWED_ORIGINS.includes(origin)) {
+      callback(null, true);
+    } else {
+      callback(new Error("CORS not allowed"));
+    }
+  },
+  methods: ["GET", "POST", "PUT", "DELETE"],
+  credentials: true,
+};
 
 const app = express();
 
-// habilita mi cors
-app.use(
-  cors({
-    origin: FRONTEND_URL, // Solo la URL limpia
-    methods: ["GET", "POST", "PUT", "DELETE"],
-    credentials: true,
-  })
-);
+// Habilita CORS con opciones avanzadas
+app.use(cors(corsOptions));
 
-// habilita mis middlewares
+// Middleware para manejar solicitudes preflight de CORS
+app.options("*", cors(corsOptions));
+
+// Habilita JSON en las solicitudes
 app.use(express.json());
 
-// habilita mis rutas
+// Habilita rutas
 app.use("/usuarios", usuariosRoutes);
 app.use("/compras", comprasRoutes);
 app.use("/colaboraciones", colaboracionesRoutes);
