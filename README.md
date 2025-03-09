@@ -1,8 +1,7 @@
 Proyecto final | Yerko Rojas | Full Stack Desafio Latam Generacion 70.
 Link a panel de planificación (hito1): https://trello.com/b/RzCxM8IZ/proyecto-final-desafio-latam](https://docs.google.com/presentation/d/1Q22HGvD9F0-A-VN-nf59myRBnE_G8qMTzq-LXfYt6Vc/edit#slide=id.g32df86d3f71_0_117
 
-🚀 BUZZCUT - Hito 3 & 4
-🎵 Plataforma de colaboraciones musicales
+🚀 BUZZCUT
 
 📍 Frontend: Netlify Deployment
 📍 Backend: Render Deployment
