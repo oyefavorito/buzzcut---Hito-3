@@ -3,8 +3,9 @@ Link a panel de planificación (hito1): https://trello.com/b/RzCxM8IZ/proyecto-f
 
 🚀 BUZZCUT
 
-📍 Frontend: Netlify Deployment
-📍 Backend: Render Deployment
+📍 Frontend: Netlify Deployment: https://sensational-biscotti-5f8579.netlify.app/
+
+📍 Backend: Render Deployment: https://dashboard.render.com/web/srv-cur6fcpopnds739q7530/logs
 
 📌 Descripción del Proyecto
 BUZZCUT es una plataforma donde los usuarios pueden compartir y colaborar en productos relacionados con la música. A través de esta aplicación, los usuarios pueden registrarse, iniciar sesión, realizar publicaciones y visualizar productos compartidos.
